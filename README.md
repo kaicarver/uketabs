@@ -8,6 +8,8 @@ https://raw.githack.com/kaicarver/uketabs/master/one.html
 
 https://raw.githack.com/kaicarver/uketabs/master/hot_n_cold.html
 
+https://raw.githack.com/kaicarver/uketabs/master/dragostea_din_tei.html
+
 ## Notes
 
 There are lots of ukulele scores out there,
