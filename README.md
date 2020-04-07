@@ -25,8 +25,20 @@ they end up too small for me to read easily.
 The idea here is to develop a template that makes
 any of these common monospace scores easily printable.
 
-The chord charts should also be easy to display
-in a nice format on the side, with fingering.
+The chord charts are also easy to display
+in a nice format on the side, ideally with fingering.
+
+## TODOs
+
+### Chord charts
 
 Just by scanning the score, the list of chord charts
-to display can be automatically generated.
+to display could be automatically generated.
+
+### Info links
+
+add Wikipedia and Youtube links for each song
+
+### Play button
+
+The score could be playable, with a choice of strumming patterns
