@@ -10,6 +10,10 @@ https://raw.githack.com/kaicarver/uketabs/master/hot_n_cold.html
 
 https://raw.githack.com/kaicarver/uketabs/master/dragostea_din_tei.html
 
+https://raw.githack.com/kaicarver/uketabs/master/mad_world.html
+
+https://raw.githack.com/kaicarver/uketabs/master/titanium.html
+
 ## Notes
 
 There are lots of ukulele scores out there,
