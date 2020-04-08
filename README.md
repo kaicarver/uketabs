@@ -1,6 +1,6 @@
 # uketabs
 
-Printable uke tabs for me to play with.
+Printable uke tabs for me to play with...
 
 ## Examples
 
