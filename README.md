@@ -14,6 +14,8 @@ https://raw.githack.com/kaicarver/uketabs/master/mad_world.html
 
 https://raw.githack.com/kaicarver/uketabs/master/titanium.html
 
+https://raw.githack.com/kaicarver/uketabs/master/heaven_on_their_minds.html
+
 ## Notes
 
 There are lots of ukulele scores out there,
