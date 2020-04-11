@@ -16,6 +16,10 @@ https://raw.githack.com/kaicarver/uketabs/master/titanium.html
 
 https://raw.githack.com/kaicarver/uketabs/master/heaven_on_their_minds.html
 
+https://raw.githack.com/kaicarver/uketabs/master/celebration.html
+
+https://raw.githack.com/kaicarver/uketabs/master/mother_of_pearl.html
+
 ## Notes
 
 ### Why: for printing
