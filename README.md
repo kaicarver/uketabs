@@ -44,3 +44,7 @@ add Wikipedia and Youtube links for each song
 ### Play button
 
 The score could be playable, with a choice of strumming patterns
+
+### Use a template
+
+It's getting silly copying files for what is the same template and 5 or 6 variables... Let's think about an easy solution. Use React?...
