@@ -71,3 +71,12 @@ It's getting silly copying files for what is the same template and 5 or 6 variab
 Use React?...
 
 https://reactjs.org/docs/add-react-to-a-website.html#add-react-in-one-minute
+
+Turns out the one-minute React is not good for shared information.
+
+And if you want the magic of multiple buttons, one shared state, they kind of need a common ancestor...
+
+So React kind of wants to take everything over.
+
+So either you have to go "full React" ("never go full React"?)
+or maybe look at React + Redux for sharing state between components that don't share an ancestor?
