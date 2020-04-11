@@ -18,6 +18,8 @@ https://raw.githack.com/kaicarver/uketabs/master/heaven_on_their_minds.html
 
 ## Notes
 
+### Why: for printing
+
 There are lots of ukulele scores out there,
 but I find I have problems printing them.
 
@@ -29,6 +31,23 @@ any of these common monospace scores easily printable.
 
 The chord charts are also easy to display
 in a nice format on the side, ideally with fingering.
+
+### chord notation
+
+the linked score has nice text chord notation:
+
+```text
+       g-C-E-A
+Fadd9  0-0-1-0  1
+Cmaj7  0-0-0-2  1
+Bm7    2-2-2-2
+       4-2-2-0  4 1 2
+E7sus4 2-2-0-2  1 2 3
+       4-2-0-0  4 1 2
+Cadd9  0-2-0-3  1 2
+```
+
+but it lacked the fingering info, so I added it.
 
 ## TODOs
 
