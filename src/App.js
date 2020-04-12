@@ -9,7 +9,7 @@ function App() {
   const tabsImage = "celebration.png";
   const score = `
   [Intro]
-  
+
   | N.C. | % | % | % |
   (drums + brass lick)
   | N.C. | % | % | % |
@@ -48,6 +48,93 @@ function App() {
       Celebration
   Fadd9                        C           G
      We're gonna celebrate and have a good time
+
+  [Middle 8]
+  Cmaj7        Bm7
+  It's time to come together
+  E7sus4          E
+  It's up to you, what's your pleasure?
+  Am        Cadd9
+  Everyone around the world, come on
+
+  [Instrumental]
+  |  C  Fadd9 C | Fadd9 C G   |
+  |  C  Fadd9 C | Fadd9 C G   |
+
+  [Chorus]
+  C Fadd9 C  Fadd9   C    G
+    Ce  - le - brate good times, come on
+  C Fadd9   C Fadd9    C   G
+                It's a celebration
+  C Fadd9 C  Fadd9   C    G
+    Ce  - le - brate good times, come on
+  C Fadd9      C Fadd9   C   G
+         Let's celebrate
+
+  [Chorus](variation)
+  Fadd9                        C        G
+  We're gonna have a good time tonight
+          Fadd9                C       G
+  Let's celebrate, it's all right
+  Fadd9                        C        G
+  We're gonna have a good time tonight
+          Fadd9                C       G
+  Let's celebrate, it's all right, baby
+
+  Fadd9                        C        G
+  We're gonna have a good time tonight
+    (Ce-                  le-  bra-    tion)
+          Fadd9                C       G
+  Let's celebrate, it's all right
+
+  Fadd9                        C        G
+  We're gonna have a good time tonight
+    (Ce-                  le-  bra-    tion)
+          Fadd9                C       G
+  Let's celebrate, it's all right
+
+  [Instrumental]
+  |  C  Fadd9 C | Fadd9 C G   |
+  |  C  Fadd9 C | Fadd9 C G   |
+
+  [Chorus]
+  C Fadd9 C  Fadd9   C    G
+    Ce  - le - brate good times, come on
+  C Fadd9   C Fadd9    C   G
+                It's a celebration
+  C Fadd9 C  Fadd9   C    G
+    Ce  - le - brate good times, come on
+  C Fadd9      C Fadd9   C   G
+         Let's celebrate
+
+  [Chorus]
+  C Fadd9 C  Fadd9   C    G
+    Ce  - le - brate good times, come on
+  C Fadd9   C Fadd9    C   G
+                It's a celebration
+  C Fadd9 C  Fadd9   C    G
+    Ce  - le - brate good times, come on
+  C Fadd9      C Fadd9   C   G
+         Let's celebrate
+
+  [Outro] repeat chorus ad lib
+  Come on and celebrate, good times, tonight
+  (Celebrate good times, come on)
+  'Cause everything's gonna be all right
+  Let's celebrate
+  (Celebrate good times, come on)
+  (Let's celebrate)...
+
+
+
+*Basic riff
+  C    Fadd9  C Fadd9 C   G         C    Fadd9  C Fadd9 C   G
+  1 + 2 + 3 + 4 +  1 + 2 + 3 + 4 +  1 + 2 + 3 + 4 +  1 + 2 + 3 + 4 +
+A|----------------|----------------|----------------|----------------|
+E|--0-0-1-1---0---|1--0---3--------|--0-0-1-1---0---|1--0---3--------|
+C|--0-0-0-0---0---|0--0---2--------|--0-0-0-0---0---|0--0---2--------|
+g|--0-0-0-0---0---|0--0---0--------|--0-0-0-0---0---|0--0---0--------|
+                               Ya - hoo!           (It's a celebration)
 `;
   return (
     <div>
