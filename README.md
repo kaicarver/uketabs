@@ -53,6 +53,25 @@ Cadd9  0-2-0-3  1 2
 
 but it lacked the fingering info, so I added it.
 
+### transpose quick and dirty
+
+```text
+initial chords  : D,A,E,B,
+transposable to : F,C,G,D,
+```
+
+identify
+
+```bash
+grep -E '(E|D|A|B)([ ]|$)' mother_of_pearl.html
+```
+
+replace
+
+```bash
+perl -i -pe 's/D([ ]|$)/F$1/g; s/A([ ]|$)/C$1/g; s/E([ ]|$)/G$1/g; s/B([ ]|$)/D$1/g; ' mother_of_pearl.html
+```
+
 ## TODOs
 
 ### Chord charts
