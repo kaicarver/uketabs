@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import './App.css';
 
 function App() {
@@ -52,7 +52,7 @@ function App() {
   return (
     <div>
       <Helmet>
-        <title>Kai's Uke Tabs</title>
+        <title>{song} by {author}</title>
       </Helmet>
       <div id="title">
         <h1>{song}</h1>
