@@ -4,6 +4,14 @@ import './App.css';
 
 function App() {
   const scores = [{
+    song: "Let It Rain",
+    author: "Eric Clapton",
+    date: "1970",
+    chordsImage: "celebration.png",
+    score: `
+  score
+  `},
+    {
     song: "Celebration",
     author: "Kool and the Gang",
     date: "1980",
