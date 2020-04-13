@@ -1,11 +1,5 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async';
-import './App.css';
-import { scores } from './scores.js';
-console.log(scores);
-
-function App() {
-  const scores = [{
+export let scores = [
+{
     song: "Let It Rain",
     author: "Eric Clapton",
     date: "1970",
@@ -150,32 +144,3 @@ g|--0-0-0-0---0---|0--0---0--------|--0-0-0-0---0---|0--0---0--------|
                                Ya - hoo!           (It's a celebration)
 `
   }];
-  return (
-    <div onClick={() => { alert("hi from parent") }}>
-      <Song song={scores[0]}/>
-   </div>
-  );
-}
-
-function Song(props) {
-  let s = props.song;
-  return <div>
-    <Helmet>
-      <title>{s.song} by {s.author}</title>
-    </Helmet>
-    <div id="title">
-      <h1>{s.song}</h1>
-      <h2>by {s.author}</h2>
-      <div class="date">{s.date}</div>
-      <p>
-        <a href={"https://" + s.url}>{s.url}</a><br />
-      </p>
-      <p id="chords">
-        <img src={s.chordsImage} alt="tabs" />
-      </p>
-    </div>
-    <pre>{s.score}</pre>
-  </div>
-}
-
-export default App;
