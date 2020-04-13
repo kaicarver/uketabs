@@ -3,112 +3,104 @@ export let scores = [
     song: "Let It Rain",
     author: "Eric Clapton",
     date: "1970",
-    chordsImage: "celebration.png",
+    chordsImage: "21chords.png",
+    chordsImageWidth: "400px",
     url: "tabs.ultimate-guitar.com/tab/derek-and-the-dominos/let-it-rain-ukulele-1377517",
+    scoreFontSize: "140%",
     score: `
-    A G  G A
- 
- 
-    A G  G A G F#m Em *
-     
-        D               Am
-    The rain is falling through the mists,
+
+
+
+
+
+
+A G  G A
+
+
+A G  G A G F#m Em *
+
+    D               Am
+The rain is falling through the mists
+   C      G       D
+of sorrow that surrounded me
+		    Am
+The sun could never thaw away
+    C         G     D
+the mist that lays around me
+
+       D  Am        D   Am
+Let it rain, let it rain,
+	 C         G       D
+let your love rain down on me
+       D  Am        D   Am
+Let it rain, let it rain,
+       C     G     D
+let it rain, rain, rain
+
+D                  Am
+My life was like a desert flower
+C       G      D
+burning in the sun
+		  Am
+Until I found the way to love
+    C      G         D
+was harder said than done
+
+       D  Am        D   Am
+Let it rain, let it rain,
+	 C         G       D
+let your love rain down on me
+       D  Am        D   Am
+Let it rain, let it rain,
+       C     G     D
+let it rain, rain, rain
+
+
+B|-5--5--5-3-5-8---|-8-8-8-7-8-10---|
+G|---------------7-|----------------|
+
+B|-5--5--5-3-5-8---|-8-8-8-7-8-10---|
+G|---------------7-|----------------|
+
+A G  G A  2x
+
+Solo
+
+D              Am
+Now I know the secret
+	 C       G      D
+there is nothing that I lack
+	     Am
+If I give my love to you
        C      G       D
-    of sorrow that surrounded me
-                        Am
-    The sun could never thaw away,
-        C         G     D
-    the mist that lays around me
-     
-           D  Am        D   Am
-    Let it rain, let it rain,
-             C         G       D
-    let your love rain down on me
-           D  Am        D   Am
-    Let it rain, let it rain,
-           C     G     D
-    let it rain, rain, rain
-     
-    D                  Am
-    My life was like a desert flower,
-    C       G      D
-    burning in the sun
-                      Am
-    Until I found the way to love,
-        C      G         D
-    was harder said than done
-     
-           D  Am        D   Am
-    Let it rain, let it rain,
-             C         G       D
-    let your love rain down on me
-           D  Am        D   Am
-    Let it rain, let it rain,
-           C     G     D
-    let it rain, rain, rain
-     
-     
-    e|-----------------|----------------|
-    B|-5--5--5-3-5-8---|-8-8-8-7-8-10---|
-    G|---------------7-|----------------|
-    D|-----------------|----------------|
-    A|-----------------|----------------|
-    E|-----------------|----------------|
-     
-    e|-----------------|----------------|
-    B|-5--5--5-3-5-8---|-8-8-8-7-8-10---|
-    G|---------------7-|----------------|
-    D|-----------------|----------------|
-    A|-----------------|----------------|
-    E|-----------------|----------------|
-     
-    A G  G A  2x
-     
-    Solo
-     
-    D              Am
-    Now I know the secret,
-             C       G      D
-    there is nothing that I lack
-                 Am
-    If I give my love to you,
-           C      G       D
-    you'll surely give it back
-     
-           D  Am        D   Am
-    Let it rain, let it rain,
-     
-             C         G       D
-    let your love rain down on me
-           D  Am        D   Am
-    Let it rain, let it rain,
-           C     G     D
-    let it rain, rain, rain
-     
-    A G  G A  2x
-     
-    e|-----------------|----------------|
-    B|-5--5--5-3-5-8---|-8-8-8-7-8-10---|
-    G|---------------7-|----------------|
-    D|-----------------|----------------|
-    A|-----------------|----------------|
-    E|-----------------|----------------|
-     
-    e|-----------------|----------------|
-    B|-5--5--5-3-5-8---|-8-8-8-7-8-10---|
-    G|---------------7-|----------------|
-    D|-----------------|----------------|
-    A|-----------------|----------------|
-    E|-----------------|----------------|
-     
-    Solo
-     
-    A G      A
-    Rain, rain  4x
-     
-    Solo
-     
-    A G  G A  2x
+you'll surely give it back
+
+       D  Am        D   Am
+Let it rain, let it rain,
+
+	 C         G       D
+let your love rain down on me
+       D  Am        D   Am
+Let it rain, let it rain,
+       C     G     D
+let it rain, rain, rain
+
+A G  G A  2x
+
+B|-5--5--5-3-5-8---|-8-8-8-7-8-10---|
+G|---------------7-|----------------|
+
+B|-5--5--5-3-5-8---|-8-8-8-7-8-10---|
+G|---------------7-|----------------|
+
+Solo
+
+A G      A
+Rain, rain  4x
+
+Solo
+
+A G  G A  2x
   `},
     {
     song: "Celebration",
