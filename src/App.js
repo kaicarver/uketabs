@@ -3,11 +3,12 @@ import { Helmet } from 'react-helmet-async';
 import './App.css';
 
 function App() {
-  let song = "Celebration";
-  let author = "Kool and the Gang";
-  let date = "1980";
-  const tabsImage = "celebration.png";
-  const score = `
+  const scores = [{
+    song: "Celebration",
+    author: "Kool and the Gang",
+    date: "1980",
+    chordsImage: "celebration.png",
+    score: `
   [Intro]
 
   | N.C. | % | % | % |
@@ -135,24 +136,26 @@ E|--0-0-1-1---0---|1--0---3--------|--0-0-1-1---0---|1--0---3--------|
 C|--0-0-0-0---0---|0--0---2--------|--0-0-0-0---0---|0--0---2--------|
 g|--0-0-0-0---0---|0--0---0--------|--0-0-0-0---0---|0--0---0--------|
                                Ya - hoo!           (It's a celebration)
-`;
+`
+  }];
+  let s = scores[0];
   return (
     <div>
       <Helmet>
-        <title>{song} by {author}</title>
+        <title>{s.song} by {s.author}</title>
       </Helmet>
       <div id="title">
-        <h1>{song}</h1>
-        <h2>by {author}</h2>
-        <div class="date">{date}</div>
+        <h1>{s.song}</h1>
+        <h2>by {s.author}</h2>
+        <div class="date">{s.date}</div>
         <p>
           <a href="https://tabs.ultimate-guitar.com/tab/kool-the-gang/celebration-ukulele-1346171">tabs.ultimate-guitar.com/tab/kool-the-gang/celebration-ukulele-1346171</a><br />
         </p>
         <p id="chords">
-          <img src={tabsImage} alt="tabs" />
+          <img src={s.chordsImage} alt="tabs" />
         </p>
       </div>
-<pre>{score}</pre>
+<pre>{s.score}</pre>
     </div>
   );
 }
