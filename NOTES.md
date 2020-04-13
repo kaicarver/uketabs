@@ -4,6 +4,7 @@
   - [Just a little bit of React?](#just-a-little-bit-of-react)
   - [static version?](#static-version)
   - [JSON or js?](#json-or-js)
+    - [one field too big](#one-field-too-big)
   - [className instead of class](#classname-instead-of-class)
 
 ## Just a little bit of React?
@@ -53,6 +54,10 @@ JSON is a nice standard format. But it's a pain to copy from JS to JSON, since J
 *And I've been increasingly convinced standard formats are not the panacea we ever-naive geeks might hope it to be. I should have learned my lesson with XML. One data format to rule them all? Um, no. That's a recipe for a lot of sad ugliness. But we look at this format (SGML, XML, YAML, JSON, TOML, ...)! It's so nice it will solve all your problems! No... Enjoy the format for what it can do, but don't expect it to be useful everywhere. Never forget the story of the Tower of Babel...
 
 For now I'll try to just put my structure in a `.js` file. As a module!
+
+### one field too big
+
+for convenience, I may want to split the data structure into two: all the song fields except for the score in one, and the looong score in another. But I'll need some easy way of referencing, and integrity checking or at least error handling.
 
 ## className instead of class
 
