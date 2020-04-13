@@ -29,3 +29,7 @@ My data needs to be in a Javascript array of objects (or hashes? what's the JS e
 JSON is a nice standard format. But it's a pain to copy from JS to JSON, since JSON is much more constraining. I don't want to do the busywork of turning JS to JSON, though I suppose there are tools for that, but if I'm going to need to use a tool to transform my data, then maybe I should use a friendlier format like TOML or YAML or Markdown or what have you.
 
 For now I'll try to just put my structure in a `.js` file. As a module!
+
+## className instead of class
+
+What a pita, I have to change all my `class` to `className`... Why is that again?

@@ -4,9 +4,10 @@ import './App.css';
 import { scores } from './scores.js';
 
 function App() {
+  let songNumber = 0;
   return (
-    <div onClick={() => { alert("hi from parent") }}>
-      <Song song={scores[1]}/>
+    <div onClick={() => { alert("hi from parent"); songNumber++ }}>
+      <Song song={scores[songNumber]}/>
    </div>
   );
 }
