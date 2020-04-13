@@ -157,6 +157,7 @@ g|--0-0-0-0---0---|0--0---0--------|--0-0-0-0---0---|0--0---0--------|
       <div id="title">
         <h1 onClick={() => {s = scores[1]; alert("does not work, use props?")}}>{s.song}</h1>
         <h2>by {s.author}</h2>
+        <Thing/>
         <div class="date">{s.date}</div>
         <p>
           <a href={"https://"+s.url}>{s.url}</a><br />
@@ -168,6 +169,10 @@ g|--0-0-0-0---0---|0--0---0--------|--0-0-0-0---0---|0--0---0--------|
 <pre>{s.score}</pre>
     </div>
   );
+}
+
+function Thing() {
+  return <div>thing</div>
 }
 
 export default App;
