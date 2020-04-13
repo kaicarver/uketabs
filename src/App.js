@@ -155,7 +155,7 @@ g|--0-0-0-0---0---|0--0---0--------|--0-0-0-0---0---|0--0---0--------|
         <title>{s.song} by {s.author}</title>
       </Helmet>
       <div id="title">
-        <h1 onClick={() => alert('change song')}>{s.song}</h1>
+        <h1 onClick={() => {s = scores[1]; alert("does not work, use props?")}}>{s.song}</h1>
         <h2>by {s.author}</h2>
         <div class="date">{s.date}</div>
         <p>
