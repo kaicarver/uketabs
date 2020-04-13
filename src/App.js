@@ -148,31 +148,32 @@ g|--0-0-0-0---0---|0--0---0--------|--0-0-0-0---0---|0--0---0--------|
                                Ya - hoo!           (It's a celebration)
 `
   }];
-  let s = scores[0];
   return (
     <div>
-      <Helmet>
-        <title>{s.song} by {s.author}</title>
-      </Helmet>
-      <div id="title">
-        <h1 onClick={() => {s = scores[1]; alert("does not work, use props?")}}>{s.song}</h1>
-        <h2>by {s.author}</h2>
-        <Thing/>
-        <div class="date">{s.date}</div>
-        <p>
-          <a href={"https://"+s.url}>{s.url}</a><br />
-        </p>
-        <p id="chords">
-          <img src={s.chordsImage} alt="tabs" />
-        </p>
-      </div>
-<pre>{s.score}</pre>
-    </div>
+      <Song scores={scores}/>
+   </div>
   );
 }
 
-function Thing() {
-  return <div>thing</div>
+function Song(props) {
+  let s = props.scores[0];
+  return <div>
+    <Helmet>
+      <title>{s.song} by {s.author}</title>
+    </Helmet>
+    <div id="title">
+      <h1 onClick={() => { alert("does not work, use props?") }}>{s.song}</h1>
+      <h2>by {s.author}</h2>
+      <div class="date">{s.date}</div>
+      <p>
+        <a href={"https://" + s.url}>{s.url}</a><br />
+      </p>
+      <p id="chords">
+        <img src={s.chordsImage} alt="tabs" />
+      </p>
+    </div>
+    <pre>{s.score}</pre>
+  </div>
 }
 
 export default App;
