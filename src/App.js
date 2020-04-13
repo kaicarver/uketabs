@@ -8,6 +8,7 @@ function App() {
     author: "Eric Clapton",
     date: "1970",
     chordsImage: "celebration.png",
+    url: "tabs.ultimate-guitar.com/tab/derek-and-the-dominos/let-it-rain-ukulele-1377517",
     score: `
   score
   `},
@@ -16,6 +17,7 @@ function App() {
     author: "Kool and the Gang",
     date: "1980",
     chordsImage: "celebration.png",
+    url: "tabs.ultimate-guitar.com/tab/kool-the-gang/celebration-ukulele-1346171",
     score: `
   [Intro]
 
@@ -157,7 +159,7 @@ g|--0-0-0-0---0---|0--0---0--------|--0-0-0-0---0---|0--0---0--------|
         <h2>by {s.author}</h2>
         <div class="date">{s.date}</div>
         <p>
-          <a href="https://tabs.ultimate-guitar.com/tab/kool-the-gang/celebration-ukulele-1346171">tabs.ultimate-guitar.com/tab/kool-the-gang/celebration-ukulele-1346171</a><br />
+          <a href={"https://"+s.url}>{s.url}</a><br />
         </p>
         <p id="chords">
           <img src={s.chordsImage} alt="tabs" />
