@@ -26,10 +26,10 @@ function Song(props) {
         <a href={"https://" + s.url}>{s.url}</a><br />
       </p>
       <p id="chords">
-        <img src={s.chordsImage} alt="tabs" />
+        <img src={s.chordsImage} alt="tabs" style={{width: s.chordsImageWidth || '115px'}}/>
       </p>
     </div>
-    <pre>{s.score}</pre>
+    <pre style={{fontSize: s.scoreFontSize || '100%'}}>{s.score}</pre>
   </div>
 }
 
