@@ -7,14 +7,14 @@ function App() {
   let songNumber = 0;
   return (
     <div onClick={() => { alert("hi from parent"); songNumber++ }}>
-      <Song song={scores[songNumber]}/>
+      <Song songNumber={songNumber}/>
    </div>
   );
 }
 
 class Song extends React.Component {
   render() {
-    let s = this.props.song;
+    let s = scores[this.props.songNumber];
     return <div>
       <Helmet>
         <title>{s.song} by {s.author}</title>
