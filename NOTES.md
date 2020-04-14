@@ -131,6 +131,10 @@ to display could be automatically generated.
 
 https://www.google.com/search?hl=en&q=ukulele+chord+diagrams+svg
 
+This looks promising, but in Python:
+
+https://github.com/gkvoelkl/python-ukulele-chord-to-svg
+
 ### Info links
 
 add Wikipedia and Youtube links for each song
