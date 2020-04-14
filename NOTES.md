@@ -1,13 +1,26 @@
 # Implementation Notes
 
 - [Implementation Notes](#implementation-notes)
-  - [Just a little bit of React?](#just-a-little-bit-of-react)
-  - [static version?](#static-version)
-  - [JSON or js?](#json-or-js)
-    - [one field too big](#one-field-too-big)
-  - [className instead of class](#classname-instead-of-class)
+  - [React](#react)
+    - [Just a little bit of React?](#just-a-little-bit-of-react)
+    - [static version?](#static-version)
+    - [JSON or js?](#json-or-js)
+      - [one field too big](#one-field-too-big)
+    - [className instead of class](#classname-instead-of-class)
+  - [Other](#other)
+    - [transpose quick and dirty](#transpose-quick-and-dirty)
+    - [chord notation](#chord-notation)
+  - [TODOs](#todos)
+    - [Chord charts](#chord-charts)
+    - [Displaying chord charts without relying on images](#displaying-chord-charts-without-relying-on-images)
+    - [Info links](#info-links)
+    - [Play button](#play-button)
+    - [Use a template](#use-a-template)
+  - [Song ideas](#song-ideas)
 
-## Just a little bit of React?
+## React
+
+### Just a little bit of React?
 
 So I tried to just add in a little bit of React to what is just a project with a bunch of static pages all on the same model...
 
@@ -33,7 +46,7 @@ npm start # it still works
 
 And I was able to integrate React that way, the way I'm already used to. No tiny bit of React for me, alas.
 
-## static version?
+### static version?
 
 But this _going full React_ for such a teeny project led me to some serious questions...
 
@@ -45,7 +58,7 @@ Well it appears the solution is... Moar framework!!! The [create-react page](htt
 
 OK! Embrace it! I'll look at those soon. Let a hundred tools bloom!
 
-## JSON or js?
+### JSON or js?
 
 For clarity, my data needs to be in a Javascript array of objects (or hashes? what's the JS equivalent? Maps?) in a separate file.
 
@@ -55,11 +68,11 @@ JSON is a nice standard format. But it's a pain to copy from JS to JSON, since J
 
 For now I'll try to just put my structure in a `.js` file. As a module!
 
-### one field too big
+#### one field too big
 
 for convenience, I may want to split the data structure into two: all the song fields except for the score in one, and the looong score in another. But I'll need some easy way of referencing, and integrity checking or at least error handling.
 
-## className instead of class
+### className instead of class
 
 What a pita, I have to change all my `class` to `className`... Why is that again?
 
@@ -68,3 +81,88 @@ Long story short: [because `class` is a JavaScript keyword](https://stackoverflo
 Ugh. This makes my HTML less portable...
 
 [Dan Abramov](https://github.com/facebook/react/issues/13525#issuecomment-417818906) is pretty interseting on this topic.
+
+## Other
+
+### transpose quick and dirty
+
+```text
+initial chords  : D,A,E,B,
+transposable to : F,C,G,D,
+```
+
+identify
+
+```bash
+grep -E '(E|D|A|B)([ ]|$)' mother_of_pearl.html
+```
+
+replace
+
+```bash
+perl -i -pe 's/D([ ]|$)/F$1/g; s/A([ ]|$)/C$1/g; s/E([ ]|$)/G$1/g; s/B([ ]|$)/D$1/g; ' mother_of_pearl.html
+```
+
+### chord notation
+
+a linked score has nice text chord notation:
+
+```text
+       g-C-E-A
+Fadd9  0-0-1-0  1
+Cmaj7  0-0-0-2  1
+Bm7    2-2-2-2
+       4-2-2-0  4 1 2
+E7sus4 2-2-0-2  1 2 3
+       4-2-0-0  4 1 2
+Cadd9  0-2-0-3  1 2
+```
+
+but it lacked the fingering info, so I added it above.
+
+## TODOs
+
+### Chord charts
+
+Just by scanning the score, the list of chord charts
+to display could be automatically generated.
+
+### Displaying chord charts without relying on images
+
+https://www.google.com/search?hl=en&q=ukulele+chord+diagrams+svg
+
+### Info links
+
+add Wikipedia and Youtube links for each song
+
+### Play button
+
+The score could be playable, with a choice of strumming patterns
+
+### Use a template
+
+It's getting silly copying files for what is the same template and 5 or 6 variables... Let's think about an easy solution.
+
+Use React?...
+
+https://reactjs.org/docs/add-react-to-a-website.html#add-react-in-one-minute
+
+Turns out the one-minute React is not good for shared information.
+
+And if you want the magic of multiple buttons, one shared state, they kind of need a common ancestor...
+
+So React kind of wants to take everything over.
+
+So either you have to go "full React" ("never go full React"?)
+or maybe look at React + Redux for sharing state between components that don't share an ancestor?
+
+## Song ideas
+
+Don't judge me...
+
+- Sounds of Silence
+- Hotel California
+- Daniel
+- Vigilante Man
+- California Dreaming
+- ...
