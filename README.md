@@ -2,6 +2,19 @@
 
 Printable uke tabs for me to play with...
 
+- [uketabs](#uketabs)
+  - [Examples](#examples)
+  - [Notes](#notes)
+    - [Why: for printing](#why-for-printing)
+    - [chord notation](#chord-notation)
+    - [transpose quick and dirty](#transpose-quick-and-dirty)
+  - [TODOs](#todos)
+    - [Chord charts](#chord-charts)
+    - [Info links](#info-links)
+    - [Play button](#play-button)
+    - [Use a template](#use-a-template)
+  - [Song ideas](#song-ideas)
+  
 ## Examples
 
 https://raw.githack.com/kaicarver/uketabs/master/one.html
@@ -89,7 +102,7 @@ The score could be playable, with a choice of strumming patterns
 
 ### Use a template
 
-It's getting silly copying files for what is the same template and 5 or 6 variables... Let's think about an easy solution. 
+It's getting silly copying files for what is the same template and 5 or 6 variables... Let's think about an easy solution.
 
 Use React?...
 
@@ -103,3 +116,14 @@ So React kind of wants to take everything over.
 
 So either you have to go "full React" ("never go full React"?)
 or maybe look at React + Redux for sharing state between components that don't share an ancestor?
+
+## Song ideas
+
+Don't judge me...
+
+- Sounds of Silence
+- Hotel California
+- Daniel
+- Vigilante Man
+- California Dreaming
+- ...
