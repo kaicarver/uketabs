@@ -29,7 +29,7 @@ class Song extends React.Component {
       <div id="title">
         <h1>{this.state.s.song}</h1>
         <h2>by {this.state.s.author}</h2>
-        <div class="date">{this.state.s.date}</div>
+        <div className="date">{this.state.s.date}</div>
         <p>
           <a href={"https://" + this.state.s.url}>{this.state.s.url}</a><br />
         </p>
