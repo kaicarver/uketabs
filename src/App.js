@@ -6,31 +6,38 @@ import { scores } from './scores.js';
 function App() {
   let songNumber = 0;
   return (
-    <div onClick={() => { alert("hi from parent"); songNumber++ }}>
+    <div>
       <Song songNumber={songNumber}/>
    </div>
   );
 }
 
 class Song extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {songNumber: this.props.songNumber, s: scores[this.props.songNumber]};
+  }
   render() {
-    let s = scores[this.props.songNumber];
-    return <div>
+    return <div
+      onClick={() => {
+        //alert("hi from song " + this.state.songNumber);
+        let num = (this.state.songNumber + 1) % scores.length;
+        this.setState({songNumber: num, s: scores[num]}) }}>
       <Helmet>
-        <title>{s.song} by {s.author}</title>
+        <title>{this.state.s.song} by {this.state.s.author}</title>
       </Helmet>
       <div id="title">
-        <h1>{s.song}</h1>
-        <h2>by {s.author}</h2>
-        <div class="date">{s.date}</div>
+        <h1>{this.state.s.song}</h1>
+        <h2>by {this.state.s.author}</h2>
+        <div class="date">{this.state.s.date}</div>
         <p>
-          <a href={"https://" + s.url}>{s.url}</a><br />
+          <a href={"https://" + this.state.s.url}>{this.state.s.url}</a><br />
         </p>
         <p id="chords">
-          <img src={s.chordsImage} alt="tabs" style={{ width: s.chordsImageWidth || '115px' }} />
+          <img src={this.state.s.chordsImage} alt="tabs" style={{ width: this.state.s.chordsImageWidth || '115px' }} />
         </p>
       </div>
-      <pre style={{ fontSize: s.scoreFontSize || '100%' }}>{s.score}</pre>
+      <pre style={{ fontSize: this.state.s.scoreFontSize || '100%' }}>{this.state.s.score}</pre>
     </div>
   }
 }
