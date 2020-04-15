@@ -36,8 +36,9 @@ class Song extends React.Component {
         <FlavorForm />
         <p>
           <a href={"https://" + this.state.s.url}>{this.state.s.url}</a><br />
+          <a href={"https://en.wikipedia.org/wiki/" + this.state.s.wiki}>wiki/{this.state.s.wiki}</a>
         </p>
-        <p id="chords">
+        <p id="chords">{this.state.s.chords}<br />
           <img src={this.state.s.chordsImage} alt="tabs" style={{ width: this.state.s.chordsImageWidth || '115px' }} />
         </p>
       </div>
