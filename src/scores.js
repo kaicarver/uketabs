@@ -7,6 +7,7 @@ export let scores = [
     chordsImageWidth: "250px",
     url: "ukutabs.com/t/the-beatles/let-it-be/",
     wiki: "Let_It_Be_(Beatles_song)",
+    video: "QDYfEBY9NM4",
     scoreFontSize: "140%",
     chords: "A Am Bb C Dm Em F G",
     score: `Intro: C  G  Am  F  C  G  F  Em Dm C
