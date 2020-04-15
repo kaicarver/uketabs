@@ -7,6 +7,7 @@
     - [JSON or js?](#json-or-js)
       - [one field too big](#one-field-too-big)
     - [className instead of class](#classname-instead-of-class)
+    - [remembering state on Back](#remembering-state-on-back)
   - [Other](#other)
     - [transpose quick and dirty](#transpose-quick-and-dirty)
     - [chord notation](#chord-notation)
@@ -81,6 +82,10 @@ Long story short: [because `class` is a JavaScript keyword](https://stackoverflo
 Ugh. This makes my HTML less portable...
 
 [Dan Abramov](https://github.com/facebook/react/issues/13525#issuecomment-417818906) is pretty interseting on this topic.
+
+### remembering state on Back
+
+TODO: if I click a link that changes the page, then do Back, the state of the page is not preserved. How do I preserve it?
 
 ## Other
 

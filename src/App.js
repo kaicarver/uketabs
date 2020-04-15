@@ -35,9 +35,12 @@ class Song extends React.Component {
         <EssayForm />
         <FlavorForm />
         <p>
-          <a href={"https://" + this.state.s.url}>{this.state.s.url}</a><br />
-          <a href={"https://en.wikipedia.org/wiki/" + this.state.s.wiki}>wiki</a>{' '}
-          <a href={"https://youtu.be/" + this.state.s.video}>video</a>
+          <Link url={"https://" + this.state.s.url} label={this.state.s.url} />
+          <br />
+          <Link url={"https://en.wikipedia.org/wiki/" + this.state.s.wiki} label={"wiki"} />
+          <Link url={"https://youtu.be/" + this.state.s.video} label={"video"} />
+          <br />
+
         </p>
         <p id="chords">{this.state.s.chords}<br />
           <img src={this.state.s.chordsImage} alt="tabs" style={{ width: this.state.s.chordsImageWidth || '115px' }} />
@@ -46,6 +49,17 @@ class Song extends React.Component {
       <pre style={{ fontSize: this.state.s.scoreFontSize || '100%' }}>{this.state.s.score}</pre>
     </div>
   }
+}
+
+function Link(props) {
+  return <>
+    <a
+      href={props.url}
+      target="_blank"
+      rel="noopener noreferrer">
+      {props.label}
+    </a>
+  </>
 }
 
 class NameForm extends React.Component {
