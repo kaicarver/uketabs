@@ -1,5 +1,16 @@
 export let scores = [
-{
+  {
+    song: "Let It Be",
+    author: "Beatles",
+    date: "196?",
+    chordsImage: "21chords.png",
+    chordsImageWidth: "400px",
+    url: "google.com",
+    scoreFontSize: "140%",
+    score: `
+...
+`},
+  {
     song: "Let It Rain",
     author: "Eric Clapton",
     date: "1970",
