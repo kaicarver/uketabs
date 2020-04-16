@@ -168,7 +168,7 @@ class Reservation extends React.Component {
     });
   }
   handleSubmit(event) {
-    alert('Reservation submitted: ' + this.state.value);
+    alert('Reservation submitted: ' + JSON.stringify(this.state, null, 4));
     event.preventDefault();
   }
   render() {
