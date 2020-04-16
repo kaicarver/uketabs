@@ -7,15 +7,15 @@ function App() {
   let songNumber = 0;
   return (
     <div>
-      <Song songNumber={songNumber}/>
-   </div>
+      <Song songNumber={songNumber} />
+    </div>
   );
 }
 
 class Song extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {songNumber: this.props.songNumber, s: scores[this.props.songNumber]};
+    this.state = { songNumber: this.props.songNumber, s: scores[this.props.songNumber] };
   }
   render() {
     return <div>
@@ -35,6 +35,7 @@ class Song extends React.Component {
         <EssayForm />
         <FlavorForm />
         <Reservation />
+        <FileInput />
         <p>
           <Link url={"https://" + this.state.s.url} label={this.state.s.url} />
           <br />
@@ -192,6 +193,29 @@ class Reservation extends React.Component {
             onChange={this.handleInputChange} />
         </label>
         <input type="submit" value="Submit" />
+      </form>
+    );
+  }
+}
+
+class FileInput extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.fileInput = React.createRef();
+  }
+  handleSubmit(event) {
+    event.preventDefault();
+    alert('File submitted: ' + (this.fileInput.current.files.length ? this.fileInput.current.files[0].name : 'none'));
+  }
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <label>
+          Upload file:
+          <input type="file" ref={this.fileInput} />
+        </label>
+        <button type="submit">Submit</button>
       </form>
     );
   }
