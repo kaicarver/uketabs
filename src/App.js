@@ -31,9 +31,11 @@ class Song extends React.Component {
           {this.state.s.song}</h1>
         <h2>by {this.state.s.author}</h2>
         <div className="date">{this.state.s.date}</div>
+        {/*
         <NameForm />
         <EssayForm />
         <FlavorForm />
+        */}
         <p>
           <Link url={"https://" + this.state.s.url} label={this.state.s.url} />
           <br />
