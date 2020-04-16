@@ -157,6 +157,7 @@ class Reservation extends React.Component {
       numberOfGuests: 2
     };
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleInputChange(event) {
     const target = event.target;
