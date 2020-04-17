@@ -179,11 +179,8 @@ class Calculator extends React.Component {
     this.state = { scale: 'c', temperature: '' };
   }
   handleCelsiusChange(temperature) {
-    console.log("handleCelsiusChange", temperature);
     let temp = 32;
     let t = { scale: 'c', temperature, temp };
-    console.log("handleCelsiusChange", t);
-    console.dir(t);
     this.setState(t);
   }
   handleFahrenheitChange(temperature) {
@@ -231,11 +228,9 @@ function tryConvert(temperature, convert) {
 class TemperatureInput extends React.Component {
   constructor(props) {
     super(props);
-    console.log(this.props)
     this.handleChange = this.handleChange.bind(this);
   }
   handleChange(e) {
-    console.log(e.target.value);
     this.props.onTemperatureChange(e.target.value);
   }
   render() {
@@ -256,3 +251,5 @@ function BoilingVerdict(props) {
   }
   return <p>The water would not boil.</p>;
 }
+
+export default Demos;

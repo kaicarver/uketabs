@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import './App.css';
 import { scores } from './scores.js';
+import Demos from './Demos.js'
 
 function App() {
   let songNumber = 0;
@@ -36,9 +37,8 @@ class Song extends React.Component {
           <br />
           <Link url={"https://en.wikipedia.org/wiki/" + this.state.s.wiki} label={"wiki"} />
           <Link url={"https://youtu.be/" + this.state.s.video} label={"video"} />
-          <br />
-
         </p>
+        <Demos />
         <p id="chords">{this.state.s.chords}<br />
           <img src={this.state.s.chordsImage} alt="tabs" style={{ width: this.state.s.chordsImageWidth || '115px' }} />
         </p>
