@@ -254,7 +254,7 @@ function BoilingVerdict(props) {
 }
 
 function FormattedDate(props) {
-  return <h2>It is {props.date.toLocaleTimeString()}.</h2>;
+  return <h2>It is {props.date.toLocaleTimeString(props.locale)}.</h2>;
 }
 class Clock extends React.Component {
     constructor(props) {
@@ -278,8 +278,7 @@ class Clock extends React.Component {
     render() {
       return (
         <div>
-          <h1>Hello, world!</h1>
-          <FormattedDate date={this.state.date} />
+          <FormattedDate date={this.state.date} locale={this.props.locale} />
         </div>
       );
     }
@@ -287,7 +286,7 @@ class Clock extends React.Component {
   function WorldClocks() {
     return (
       <div>
-        <Clock />
+        <Clock locale="it-IT"/>
         <Clock />
         <Clock />
       </div>
