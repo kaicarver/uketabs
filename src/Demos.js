@@ -254,7 +254,7 @@ function BoilingVerdict(props) {
 }
 
 function FormattedDate(props) {
-  return <h2>It is {props.date.toLocaleTimeString(props.locale)}.</h2>;
+  return <h2>It is {props.date.toLocaleTimeString(props.locale)} on {props.date.toLocaleDateString(props.locale)}.</h2>;
 }
 class Clock extends React.Component {
     constructor(props) {
