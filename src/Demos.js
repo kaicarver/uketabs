@@ -254,7 +254,7 @@ function BoilingVerdict(props) {
 }
 
 function FormattedDate(props) {
-  return <h2>It is {props.date.toLocaleTimeString(props.locale)} on {Intl.DateTimeFormat(props.locale)}.</h2>;
+  return <h2>It is {props.date.toLocaleTimeString(props.locale)} on {Intl.DateTimeFormat(props.locale, { timeZone: props.timeZone }).format(props.date)} in {props.timeZone}.</h2>;
 }
 class Clock extends React.Component {
     constructor(props) {
@@ -278,7 +278,7 @@ class Clock extends React.Component {
     render() {
       return (
         <div>
-          <FormattedDate date={this.state.date} locale={this.props.locale} />
+          <FormattedDate date={this.state.date} locale={this.props.locale} timeZone={this.props.timeZone}  />
         </div>
       );
     }
@@ -286,9 +286,9 @@ class Clock extends React.Component {
   function WorldClocks() {
     return (
       <div>
-        <Clock locale="it-IT"/>
-        <Clock locale="zh-TW"/>
-        <Clock locale="ar-EG"/>
+        <Clock locale="fr-FR" timeZone="Europe/Paris"/>
+        <Clock locale="zh-TW" timeZone="Asia/Taipei"/>
+        <Clock locale="ar-EG" timeZone="Africa/Cairo"/>
         <Clock/>
       </div>
     );
