@@ -287,8 +287,9 @@ class Clock extends React.Component {
     return (
       <div>
         <Clock locale="it-IT"/>
-        <Clock />
-        <Clock />
+        <Clock locale="zh-TW"/>
+        <Clock locale="ar-EG"/>
+        <Clock/>
       </div>
     );
   }
