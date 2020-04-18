@@ -12,6 +12,7 @@ ReactDOM.render(
       <HelmetProvider>
         <Switch>
           <Route path="/" component={App} exact />
+          <Route path="/test" render={(props) => <App {...props} test={true} />} />
           <Route path="/about" component={About} exact />
         </Switch>
       </HelmetProvider>
