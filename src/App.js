@@ -21,6 +21,7 @@ class Song extends React.Component {
   render() {
     return (
       <div>
+      <main>
         <Helmet>
           <title>{this.state.s.song} by {this.state.s.author}</title>
         </Helmet>
@@ -45,6 +46,7 @@ class Song extends React.Component {
           </p>
         </div>
         <pre style={{ fontSize: this.state.s.scoreFontSize || '100%' }}>{this.state.s.score}</pre>
+      </main>
       </div>
     )
   }
