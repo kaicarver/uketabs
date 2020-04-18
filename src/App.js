@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import './App.css';
 import { scores } from './scores.js';
 import Demos from './Demos.js'
 
-function App() {
+export function App() {
   let songNumber = 0;
   return (
     <div>
@@ -47,6 +48,7 @@ class Song extends React.Component {
         </div>
         <pre style={{ fontSize: this.state.s.scoreFontSize || '100%' }}>{this.state.s.score}</pre>
       </main>
+      <Navbar />
       </div>
     )
   }
@@ -62,5 +64,14 @@ function LinkOut(props) {
     </a>
   </>
 }
+
+export function Navbar() {
+  return (
+    <ul>
+      <li><Link to="/">Home </Link></li>
+      <li><Link to="/about">About this site</Link></li>
+    </ul>
+  );
+};
 
 export default App;
