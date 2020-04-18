@@ -10,8 +10,7 @@ export function App(props) {
   return (
     <div>
       <Navbar {...props}/>
-      {"props=" + JSON.stringify(props)}
-      <Song songNumber={songNumber} />
+      <Song songNumber={songNumber} test={props.test} />
     </div>
   );
 }
@@ -42,7 +41,7 @@ class Song extends React.Component {
             <LinkOut url={"https://en.wikipedia.org/wiki/" + this.state.s.wiki} label={"wiki"} />
             <LinkOut url={"https://youtu.be/" + this.state.s.video} label={"video"} />
           </p>
-          <Demos />
+          { this.props.test ? <Demos /> : "nothing" }
           <p id="chords">{this.state.s.chords}<br />
             <img src={this.state.s.chordsImage} alt="tabs" style={{ width: this.state.s.chordsImageWidth || '115px' }} />
           </p>
@@ -67,7 +66,6 @@ function LinkOut(props) {
 export function Navbar(props) {
   return (
     <div>
-      PROPS { props.test ? "TRUTH" : "LIES"}<br />
       <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/test">Test</Link></li>
