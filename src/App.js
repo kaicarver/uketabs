@@ -5,10 +5,12 @@ import './App.css';
 import { scores } from './scores.js';
 import Demos from './Demos.js'
 
-export function App() {
+export function App(props) {
   let songNumber = 0;
   return (
     <div>
+      <Navbar {...props}/>
+      {"props=" + JSON.stringify(props)}
       <Song songNumber={songNumber} />
     </div>
   );
@@ -21,7 +23,6 @@ class Song extends React.Component {
   }
   render() {
     return (
-      <div>
       <main>
         <Helmet>
           <title>{this.state.s.song} by {this.state.s.author}</title>
@@ -48,8 +49,6 @@ class Song extends React.Component {
         </div>
         <pre style={{ fontSize: this.state.s.scoreFontSize || '100%' }}>{this.state.s.score}</pre>
       </main>
-      <Navbar />
-      </div>
     )
   }
 }
@@ -65,12 +64,16 @@ function LinkOut(props) {
   </>
 }
 
-export function Navbar() {
+export function Navbar(props) {
   return (
-    <ul>
-      <li><Link to="/">Home </Link></li>
-      <li><Link to="/about">About this site</Link></li>
-    </ul>
+    <div>
+      PROPS { props.test ? "TRUTH" : "LIES"}<br />
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/test">Test</Link></li>
+        <li><Link to="/about">About this site</Link></li>
+      </ul>
+    </div>
   );
 };
 

@@ -21,14 +21,14 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-function About() {
+function About(props) {
   return (
     <div>
+      <Navbar {...props}/>
       <main>
         <h1>About!</h1>
         <p>This is for getting the scores of various songs.</p>
       </main>
-      <Navbar />
     </div>
   )
 }
