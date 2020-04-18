@@ -11,9 +11,8 @@ ReactDOM.render(
     <BrowserRouter>
       <HelmetProvider>
         <Switch>
-        <Route path="/" component={App} exact />
-        <Route path="/about" component={About} exact />
-
+          <Route path="/" component={App} exact />
+          <Route path="/about" component={About} exact />
         </Switch>
       </HelmetProvider>
     </BrowserRouter>

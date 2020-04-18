@@ -8,6 +8,7 @@
       - [one field too big](#one-field-too-big)
     - [className instead of class](#classname-instead-of-class)
     - [remembering state on Back](#remembering-state-on-back)
+    - [routing](#routing)
   - [Other](#other)
     - [transpose quick and dirty](#transpose-quick-and-dirty)
     - [chord notation](#chord-notation)
@@ -86,6 +87,14 @@ Ugh. This makes my HTML less portable...
 ### remembering state on Back
 
 TODO: if I click a link that changes the page, then do Back, the state of the page is not preserved. How do I preserve it?
+
+### routing
+
+tried out some basic routing using this guide
+
+Learn React Router in 5 Minutes
+
+https://www.freecodecamp.org/news/react-router-in-5-minutes/
 
 ## Other
 
