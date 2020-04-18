@@ -149,6 +149,10 @@ This looks promising, but in Python:
 
 https://github.com/gkvoelkl/python-ukulele-chord-to-svg
 
+Actually it refers to [&lt;uke-chord>](https://pianosnake.github.io/uke-chord/), "a Web Component element for a ukulele chord diagram using SVG graphics", which looks good and worth exploring:
+
+https://pianosnake.github.io/uke-chord/
+
 ### Info links
 
 add Wikipedia and Youtube links for each song
