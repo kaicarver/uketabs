@@ -41,6 +41,7 @@ class Song extends React.Component {
             <LinkOut url={"https://en.wikipedia.org/wiki/" + this.state.s.wiki} label={"wiki"} />
             <LinkOut url={"https://youtu.be/" + this.state.s.video} label={"video"} />
           </p>
+          <Chords chords={["2010"]} />
           { this.props.test ? <Demos /> : "nothing" }
           <p id="chords">{this.state.s.chords}<br />
             <img src={this.state.s.chordsImage} alt="tabs" style={{ width: this.state.s.chordsImageWidth || '115px' }} />
@@ -50,6 +51,17 @@ class Song extends React.Component {
       </main>
     )
   }
+}
+
+function Chords(props) {
+  return (
+    <div>
+    <script src="//pianosnake.github.io/uke-chord/webcomponents-lite.min.js"></script>
+    <script src="//pianosnake.github.io/uke-chord/uke-chord.js"></script>
+    HELLO
+    <uke-chord frets="2010"></uke-chord>
+    </div>
+  )
 }
 
 function LinkOut(props) {
