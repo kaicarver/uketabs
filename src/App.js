@@ -6,7 +6,7 @@ import { scores } from './scores.js';
 import Demos from './Demos.js'
 
 export function App(props) {
-  let songNumber = 0;
+  let songNumber = 2;
   return (
     <div>
       <Navbar {...props}/>
@@ -59,8 +59,12 @@ function Chords(props) {
   return (
     <div>
       chords: {props.chords}<br />
+      chords: {props.chords.split(" ")}<br />
+      chords: {props.chords.split(" ").map((name) =>
+        <span>{name} </span>
+      )}<br />
       {props.chords.split(" ").map((name) =>
-        <Chord name={name} />
+        <span>{name}: <Chord name={name} /></span>
       )}<br />
       <Chord frets="2100" />
       <Chord frets="2000" />
@@ -98,7 +102,7 @@ function Chord(props) {
   const c = chordMap[props.name] || { name: props.name + "?", frets: props.frets, fingers: "" };
   return (
     <span>
-      <uke-chord frets={c.frets} position="0" name={c.name} fingers={c.fingers}></uke-chord>
+      {c.name} <uke-chord frets={c.frets} position="0" name={c.name} fingers={c.fingers}></uke-chord>
     </span>
   )
 }
