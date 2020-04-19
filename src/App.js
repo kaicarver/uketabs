@@ -73,10 +73,21 @@ function Chords(props) {
     </div>
   )
 }
+let chords = {
+  "A" : {
+    frets: "2100",
+    fingers: "2100"
+  },
+  "C" : {
+    frets: "0003",
+    fingers: "0003"
+  }
+}
 function Chord(props) {
+  const chord = chords[props.name] || {  frets: props.frets, fingers: "" };
   return (
     <span>
-      <uke-chord frets={props.frets} position="0" name={props.name} fingers="1324"></uke-chord>
+      <uke-chord frets={chord.frets} position="0" name={props.name} fingers={chord.fingers}></uke-chord>
     </span>
   )
 }
