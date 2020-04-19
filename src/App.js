@@ -59,13 +59,19 @@ function Chords(props) {
   return (
     <div>
       chords: {props.chords}<br />
-      <uke-chord frets="0003"></uke-chord>
-      <uke-chord frets="0232"></uke-chord>
-      <uke-chord frets="2000"></uke-chord>
-      <uke-chord frets="2010"></uke-chord>
-      <uke-chord frets="0321"></uke-chord>
-      <uke-chord frets="2210"></uke-chord>
-      <uke-chord frets="3211"></uke-chord>
+      <Chord frets="0003" />
+      <Chord frets="0232" />
+      <Chord frets="2010" />
+      <Chord frets="0321" />
+      <Chord frets="2210" />
+      <Chord frets="3211" />
+    </div>
+  )
+}
+function Chord(props) {
+  return (
+    <div>
+      <uke-chord frets={props.frets}></uke-chord>
     </div>
   )
 }
