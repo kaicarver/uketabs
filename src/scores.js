@@ -91,6 +91,7 @@ Outro: F  Em Dm C  Bb A G  F  C
     chordsImage: "21chords.png",
     chordsImageWidth: "400px",
     url: "tabs.ultimate-guitar.com/tab/derek-and-the-dominos/let-it-rain-ukulele-1377517",
+    chords: "D A Am C G D F#m",
     scoreFontSize: "140%",
     score: `
 
@@ -193,6 +194,7 @@ A G  G A  2x
     date: "1980",
     chordsImage: "celebration.png",
     url: "tabs.ultimate-guitar.com/tab/kool-the-gang/celebration-ukulele-1346171",
+    chords: "Fadd9 C G",
     score: `
   [Intro]
 
