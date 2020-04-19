@@ -25,6 +25,8 @@ class Song extends React.Component {
       <main>
         <Helmet>
           <title>{this.state.s.song} by {this.state.s.author}</title>
+          <script src="//pianosnake.github.io/uke-chord/webcomponents-lite.min.js"></script>
+          <script src="//pianosnake.github.io/uke-chord/uke-chord.js"></script>
         </Helmet>
         <div id="title">
           <h1 onClick={() => {
@@ -56,10 +58,13 @@ class Song extends React.Component {
 function Chords(props) {
   return (
     <div>
-    <script src="//pianosnake.github.io/uke-chord/webcomponents-lite.min.js"></script>
-    <script src="//pianosnake.github.io/uke-chord/uke-chord.js"></script>
-    HELLO
-    <uke-chord frets="2010"></uke-chord>
+      <uke-chord frets="0003"></uke-chord>
+      <uke-chord frets="0232"></uke-chord>
+      <uke-chord frets="2000"></uke-chord>
+      <uke-chord frets="2010"></uke-chord>
+      <uke-chord frets="0321"></uke-chord>
+      <uke-chord frets="2210"></uke-chord>
+      <uke-chord frets="3211"></uke-chord>
     </div>
   )
 }
