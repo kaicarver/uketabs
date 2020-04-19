@@ -73,21 +73,32 @@ function Chords(props) {
     </div>
   )
 }
-let chords = {
-  "A" : {
+
+let chordsData = [
+  {
+    name: "A",
     frets: "2100",
-    fingers: "2100"
+    fingers: "2100",
   },
-  "C" : {
+  {
+    name: "C",
     frets: "0003",
-    fingers: "0003"
-  }
-}
+    fingers: "0003",
+  },
+  {
+    name: "F",
+    frets: "2010",
+    fingers: "2010",
+  },
+];
+// Turn list of objects into a map
+let chordMap =
+  chordsData.reduce((map, o) => { map[o.name] = o; return map; }, {});
 function Chord(props) {
-  const chord = chords[props.name] || {  frets: props.frets, fingers: "" };
+  const c = chordMap[props.name] || { name: props.name + "?", frets: props.frets, fingers: "" };
   return (
     <span>
-      <uke-chord frets={chord.frets} position="0" name={props.name} fingers={chord.fingers}></uke-chord>
+      <uke-chord frets={c.frets} position="0" name={c.name} fingers={c.fingers}></uke-chord>
     </span>
   )
 }
