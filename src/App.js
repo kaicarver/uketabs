@@ -59,6 +59,8 @@ function Chords(props) {
   return (
     <div>
       chords: {props.chords}<br />
+      <Chord frets="2100" />
+      <Chord frets="2000" />
       <Chord frets="0003" />
       <Chord frets="0232" />
       <Chord frets="2010" />
@@ -71,7 +73,7 @@ function Chords(props) {
 function Chord(props) {
   return (
     <div>
-      <uke-chord frets={props.frets}></uke-chord>
+      <uke-chord frets={props.frets} position="0" name="F7" fingers="1324"></uke-chord>
     </div>
   )
 }
