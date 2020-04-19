@@ -44,7 +44,7 @@ class Song extends React.Component {
             <LinkOut url={"https://youtu.be/" + this.state.s.video} label={"video"} />
           </p>
           <Chords chords={this.state.s.chords} />
-          { this.props.test ? <Demos /> : "nothing" }
+          { this.props.test ? <Demos /> : "" }
           <p id="chords">{this.state.s.chords}<br />
             <img src={this.state.s.chordsImage} alt="tabs" style={{ width: this.state.s.chordsImageWidth || '115px' }} />
           </p>
@@ -59,6 +59,9 @@ function Chords(props) {
   return (
     <div>
       chords: {props.chords}<br />
+      {props.chords.split(" ").map((name) =>
+        <Chord name={name} />
+      )}<br />
       <Chord frets="2100" />
       <Chord frets="2000" />
       <Chord frets="0003" />
@@ -72,9 +75,9 @@ function Chords(props) {
 }
 function Chord(props) {
   return (
-    <div>
-      <uke-chord frets={props.frets} position="0" name="F7" fingers="1324"></uke-chord>
-    </div>
+    <span>
+      <uke-chord frets={props.frets} position="0" name={props.name} fingers="1324"></uke-chord>
+    </span>
   )
 }
 
