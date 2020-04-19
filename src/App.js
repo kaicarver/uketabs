@@ -6,7 +6,7 @@ import { scores } from './scores.js';
 import Demos from './Demos.js'
 
 export function App(props) {
-  let songNumber = 0;
+  let songNumber = 2;
   return (
     <div>
       <Navbar {...props}/>
@@ -66,14 +66,6 @@ function Chords(props) {
       {props.chords.split(" ").map((name) =>
         <span>{name}: <Chord name={name} /></span>
       )}<br />
-      <Chord frets="2100" />
-      <Chord frets="2000" />
-      <Chord frets="0003" />
-      <Chord frets="0232" />
-      <Chord frets="2010" />
-      <Chord frets="0321" />
-      <Chord frets="2210" />
-      <Chord frets="3211" />
     </div>
   )
 }
@@ -85,9 +77,34 @@ let chordsData = [
     fingers: "2100",
   },
   {
+    name: "Am",
+    frets: "2000",
+    fingers: "2000",
+  },
+  {
+    name: "Bb",
+    frets: "3211",
+    fingers: "3211",
+  },
+  {
     name: "C",
     frets: "0003",
     fingers: "0003",
+  },
+  {
+    name: "D",
+    frets: "2220",
+    fingers: "1230",
+  },
+  {
+    name: "Dm",
+    frets: "2210",
+    fingers: "2310",
+  },
+  {
+    name: "Em",
+    frets: "0321",
+    fingers: "0321",
   },
   {
     name: "F",
@@ -95,8 +112,18 @@ let chordsData = [
     fingers: "2010",
   },
   {
+    name: "Fadd9",
+    frets: "0010",
+    fingers: "0010",
+  },
+  {
+    name: "F#m",
+    frets: "3111",
+    fingers: "3111",
+  },
+  {
     name: "G",
-    frets: "0121",
+    frets: "0232",
     fingers: "0132",
   },
 ];
