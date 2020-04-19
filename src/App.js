@@ -6,7 +6,7 @@ import { scores } from './scores.js';
 import Demos from './Demos.js'
 
 export function App(props) {
-  let songNumber = 2;
+  let songNumber = 0;
   return (
     <div>
       <Navbar {...props}/>
@@ -93,6 +93,11 @@ let chordsData = [
     name: "F",
     frets: "2010",
     fingers: "2010",
+  },
+  {
+    name: "G",
+    frets: "0121",
+    fingers: "0132",
   },
 ];
 // Turn list of objects into a map
