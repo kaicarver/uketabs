@@ -20,7 +20,7 @@ class Song extends React.Component {
     super(props);
     this.state = { songNumber: this.props.songNumber, s: scores[this.props.songNumber] };
   }
-  render(props) {
+  render() {
     return (
       <main>
         <Helmet>
@@ -34,7 +34,7 @@ class Song extends React.Component {
             let num = (this.state.songNumber + 1) % scores.length;
             this.setState({ songNumber: num, s: scores[num] })
           }}>
-            {this.state.s.song} {this.props.songNumber}</h1>
+            {this.state.s.song} {this.state.songNumber} {this.props.songNumber}</h1>
           <h2>by {this.state.s.author}</h2>
           <div className="date">{this.state.s.date}</div>
           <p>
@@ -43,6 +43,8 @@ class Song extends React.Component {
             <LinkOut url={"https://en.wikipedia.org/wiki/" + this.state.s.wiki} label={"wiki"} />
             <LinkOut url={"https://youtu.be/" + this.state.s.video} label={"video"} />
           </p>
+          chords {this.state.s.chords}<br/>
+          song number state {this.state.songNumber}<br/>
           <Chords chords={this.state.s.chords} />
           { this.props.test ? <Demos /> : "" }
           <p id="chords">{this.state.s.chords}<br />
@@ -58,11 +60,6 @@ class Song extends React.Component {
 function Chords(props) {
   return (
     <div>
-      chords: {props.chords}<br />
-      chords: {props.chords.split(" ")}<br />
-      chords: {props.chords.split(" ").map((name) =>
-        <span>{name} </span>
-      )}<br />
       {props.chords.split(" ").map((name) =>
         <span>{name}: <Chord name={name} /></span>
       )}<br />
