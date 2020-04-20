@@ -42,27 +42,13 @@ class Song extends React.Component {
             <LinkOut url={"https://en.wikipedia.org/wiki/" + this.state.s.wiki} label={"wiki"} />
             <LinkOut url={"https://youtu.be/" + this.state.s.video} label={"video"} />
           </p>
-          chords {this.state.s.chords}<br/>
           <Chords chords={this.state.s.chords} />
           { this.props.test ? <Demos /> : "" }
-          <p id="chords">{this.state.s.chords}<br />
-            <img src={this.state.s.chordsImage} alt="tabs" style={{ width: this.state.s.chordsImageWidth || '115px' }} />
-          </p>
         </div>
         <pre style={{ fontSize: this.state.s.scoreFontSize || '100%' }}>{this.state.s.score}</pre>
       </main>
     )
   }
-}
-
-function Chords(props) {
-  return (
-    <div>
-      {props.chords.split(" ").map((name) =>
-        <span key={name}><Chord name={name} /></span>
-      )}<br />
-    </div>
-  )
 }
 
 let chordsData = [
@@ -125,6 +111,16 @@ let chordsData = [
 // Turn list of objects into a map
 let chordMap =
   chordsData.reduce((map, o) => { map[o.name] = o; return map; }, {});
+
+function Chords(props) {
+  return (
+    <div>
+      {props.chords.split(" ").map((name) =>
+        <div key={name}><Chord name={name} /></div>
+      )}<br />
+    </div>
+  )
+}
 function Chord(props) {
   const c = chordMap[props.name] || { name: props.name + "?", frets: props.frets, fingers: "" };
   return (
