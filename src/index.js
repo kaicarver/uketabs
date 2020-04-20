@@ -27,7 +27,8 @@ function About(props) {
       <Navbar {...props}/>
       <main>
         <h1>About!</h1>
-        <p>This is for getting the scores of various songs.</p>
+        <p>This is for getting the ukulele scores of various songs in a printable format.</p>
+        <p>Click on the title of a song to see another.</p>
       </main>
     </div>
   )
