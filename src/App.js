@@ -30,11 +30,10 @@ class Song extends React.Component {
         </Helmet>
         <div id="title">
           <h1 onClick={() => {
-            //alert("hi from song " + this.state.songNumber);
             let num = (this.state.songNumber + 1) % scores.length;
             this.setState({ songNumber: num, s: scores[num] })
           }}>
-            {this.state.s.song} {this.state.songNumber} {this.props.songNumber}</h1>
+            {this.state.s.song}</h1>
           <h2>by {this.state.s.author}</h2>
           <div className="date">{this.state.s.date}</div>
           <p>
@@ -44,7 +43,6 @@ class Song extends React.Component {
             <LinkOut url={"https://youtu.be/" + this.state.s.video} label={"video"} />
           </p>
           chords {this.state.s.chords}<br/>
-          song number state {this.state.songNumber}<br/>
           <Chords chords={this.state.s.chords} />
           { this.props.test ? <Demos /> : "" }
           <p id="chords">{this.state.s.chords}<br />
@@ -61,7 +59,7 @@ function Chords(props) {
   return (
     <div>
       {props.chords.split(" ").map((name) =>
-        <span>{name}: <Chord name={name} /></span>
+        <span key={name}><Chord name={name} /></span>
       )}<br />
     </div>
   )
@@ -131,7 +129,7 @@ function Chord(props) {
   const c = chordMap[props.name] || { name: props.name + "?", frets: props.frets, fingers: "" };
   return (
     <span>
-      {c.name} <uke-chord frets={c.frets} position="0" name={c.name} fingers={c.fingers}></uke-chord>
+      <uke-chord frets={c.frets} position="0" name={c.name} fingers={c.fingers}></uke-chord>
     </span>
   )
 }

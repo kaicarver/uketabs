@@ -15,6 +15,7 @@
   - [TODOs](#todos)
     - [Chord charts](#chord-charts)
     - [Displaying chord charts without relying on images](#displaying-chord-charts-without-relying-on-images)
+    - [link to chord](#link-to-chord)
     - [Info links](#info-links)
     - [Play button](#play-button)
     - [Use a template](#use-a-template)
@@ -152,6 +153,12 @@ https://github.com/gkvoelkl/python-ukulele-chord-to-svg
 Actually it refers to [&lt;uke-chord>](https://pianosnake.github.io/uke-chord/), "a Web Component element for a ukulele chord diagram using SVG graphics", which looks good and worth exploring:
 
 https://pianosnake.github.io/uke-chord/
+
+Looking good!
+
+### link to chord
+
+Would be nice to link to some Wikipedia-like page for each chord.
 
 ### Info links
 

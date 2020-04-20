@@ -91,7 +91,7 @@ Outro: F  Em Dm C  Bb A G  F  C
     chordsImage: "21chords.png",
     chordsImageWidth: "400px",
     url: "tabs.ultimate-guitar.com/tab/derek-and-the-dominos/let-it-rain-ukulele-1377517",
-    chords: "D A Am C G D F#m",
+    chords: "D A Am C G F#m",
     scoreFontSize: "140%",
     score: `
 
