@@ -25,8 +25,8 @@ class Song extends React.Component {
       <main>
         <Helmet>
           <title>{this.state.s.song} by {this.state.s.author}</title>
-          <script src="//pianosnake.github.io/uke-chord/webcomponents-lite.min.js"></script>
-          <script src="//pianosnake.github.io/uke-chord/uke-chord.js"></script>
+          <script src="webcomponents-lite.min.js"></script>
+          <script src="uke-chord.js"></script>
         </Helmet>
         <div id="title">
           <h1 onClick={() => {
