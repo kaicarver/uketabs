@@ -140,14 +140,12 @@ function Chord(props) {
 }
 
 function LinkOut(props) {
-  return <>
-    <a
-      href={props.url}
-      target="_blank"
-      rel="noopener noreferrer">
-      {props.label}
-    </a>
-  </>
+  return <span><a
+    href={props.url}
+    target="_blank"
+    rel="noopener noreferrer">
+    {props.label}
+  </a> </span>
 }
 
 export function Navbar(props) {
