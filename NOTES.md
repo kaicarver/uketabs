@@ -195,3 +195,10 @@ Don't judge me...
 - Vigilante Man
 - California Dreaming
 - ...
+
+### Spain, and nice web site
+
+chordu.com has a very nice interface that supports piano chords too. (But no lyrics?)
+
+- easy Spain: https://chordu.com/chords-tabs-spain-it-s-so-true-id_1a9zys2HWfE
+- hard Spain: https://chordu.com/chords-tabs-spain-untitled-1--id_-RxxNa4098s
