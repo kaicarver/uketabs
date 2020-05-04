@@ -200,5 +200,6 @@ Don't judge me...
 
 chordu.com has a very nice interface that supports piano chords too. (But no lyrics?)
 
-- easy Spain: https://chordu.com/chords-tabs-spain-it-s-so-true-id_1a9zys2HWfE
-- hard Spain: https://chordu.com/chords-tabs-spain-untitled-1--id_-RxxNa4098s
+- Spain! easy (-looking) _It's So True_: https://chordu.com/chords-tabs-spain-it-s-so-true-id_1a9zys2HWfE
+- hard _Untitled #1_ https://chordu.com/chords-tabs-spain-untitled-1--id_-RxxNa4098s
+- easy (-looking), and so great, _Spiritual_ https://chordu.com/chords-tabs-spain-spiritual-id_2kFB5oHXTQ4 https://youtu.be/Z8WEDOEe0_Q?t=1917
